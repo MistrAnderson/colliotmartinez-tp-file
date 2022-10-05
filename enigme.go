@@ -30,8 +30,8 @@ func main() {
 		fmt.Println(err)
 	}
 
-	solution = append(solution, listFile[0])
-	solution = append(solution, listFile[len(listFile)-1])
+	solution = append(solution, listFile[0])               //Ajout de la première ligne dans le tableau solution
+	solution = append(solution, listFile[len(listFile)-1]) //Ajout de la dernière ligne dans le tableau solution
 
 	for j, mot := range listFile {
 		if mot == "before" {
